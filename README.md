@@ -19,6 +19,9 @@ DISCLAIMER: By the nature of this project you are creating resources in the clou
 ## Prerequisites
 I have included a lot of instructions for getting the tools and all in place in the instructions below. The only other assumption is that you already have created a Microsoft Azure account and have at least done a little bit of reading and familiarizing with Azure. This is my first project with Azure. All my prior cloud experience is from AWS.
 
+## Terraform Version
+Just a quick notice: to keep my life simple, I wrote this project while using the same version of Terraform as the one recommended for use at my workplace 0.11.14. 0.12.x is already released so I wanted to provide a notice for anyone using the latest version, this may not work as well or at all as if run using 0.11.x.
+
 ## Instructions
 You made it this far and for that I thank you. No more long-winded speeches. Here you go:
 
