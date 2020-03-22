@@ -24,7 +24,7 @@ You made it this far and for that I thank you. No more long-winded speeches. Her
 
 1. Download and install Terraform
   * [Latest release](https://www.terraform.io/downloads.html)
-  * If you want to use the same version I did go [here](https://releases.hashicorp.com/terraform/0.11.14/)
+  * If you want to use the same version I did (0.11.14) go [here](https://releases.hashicorp.com/terraform/0.11.14/)
   * From the [downloads page](https://www.terraform.io/downloads.html) - "Terraform is distributed as a single binary. Install Terraform by unzipping it and moving it to a directory included in your system's [PATH](https://superuser.com/questions/284342/what-are-path-and-other-environment-variables-and-how-can-i-set-or-use-them)."
 2. [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 3. [Sign in with the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/authenticate-azure-cli?view=azure-cli-latest)
