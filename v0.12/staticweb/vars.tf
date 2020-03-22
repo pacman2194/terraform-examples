@@ -1,20 +1,26 @@
 # your resource group name
-variable "resource_group" { }
+variable "resource_group" {
+}
 
 # azure location / region checkout https://azure.microsoft.com/en-us/global-infrastructure/regions/
-variable "location" { }
+variable "location" {
+}
 
 # a variable to give some uniqueness to names
-variable "prefix" { }
+variable "prefix" {
+}
 
 # number of webservers to spin up
-variable "webserver_count" { }
+variable "webserver_count" {
+}
 
 # name for the user on your webservers
-variable "webserver_user" { }
+variable "webserver_user" {
+}
 
 # password for the user on your webservers
-variable "webserver_pass" { }
+variable "webserver_pass" {
+}
 
 variable "ssh_key_path" {
   default = "~/.ssh/id_rsa.pub"
@@ -25,4 +31,6 @@ variable "use_dns" {
 }
 
 # zone name for DNS
-variable "dns_zone_name" { }
+variable "dns_zone_name" {
+}
+
