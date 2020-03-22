@@ -38,3 +38,6 @@ I have included a lot of instructions for getting the tools and all in place in 
   * If all looks well then run `terraform apply "plan"`.
   * If you don't like the plan, make some adjustments to either your variable inputs or some of the code in the project.
 9. When Terraform finishes running you will notice a couple of outputs: rg_location and public_ip. You can use the public_ip output to go to your new website assuming everything went fine. I noticed this can potentially be a little buggy for a minute or so but should be working almost immediately. If you have purchased a domain and really want to use it then please review the [documentation here](https://docs.microsoft.com/en-us/azure/dns/dns-delegate-domain-azure-dns).
+
+## Done playing?
+If you are done playing around and want to destroy the resources run `terraform destroy`. This will destroy the terraform managed resources in this directory.

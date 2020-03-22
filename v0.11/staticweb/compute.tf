@@ -17,21 +17,11 @@ resource "azurerm_virtual_machine" "webserver" {
   vm_size                         = "Standard_B1s"
   delete_os_disk_on_termination   = true
   delete_data_disks_on_termination = true
-  # admin_username                  = "${var.webserver_user}"
-  # admin_password                  = "${var.webserver_pass}"
   availability_set_id             = "${azurerm_availability_set.webserver.id}"
-  # disable_password_authentication = true
-  # network_interface_ids = [
-  #   "${azurerm_network_interface.webserver[count.index].id}",
-  # ]
   network_interface_ids = [
     "${azurerm_network_interface.webserver.id}",
   ]
 
-  # admin_ssh_key {
-  #   username   = "${var.webserver_user}"
-  #   public_key = "${file("~/.ssh/id_rsa.pub")}"
-  # }
   storage_image_reference {
     publisher = "Canonical"
     offer     = "UbuntuServer"
@@ -54,7 +44,6 @@ resource "azurerm_virtual_machine" "webserver" {
     disable_password_authentication = false
     ssh_keys = {
       key_data = "${file("${var.ssh_key_path}")}"
-      # key_data = "${file("~/.ssh/id_rsa.pub")}"
       path     = "/home/${var.webserver_user}/.ssh/authorized_keys"
     }
   }
